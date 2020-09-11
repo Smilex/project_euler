@@ -7,4 +7,4 @@ PROGS = $(patsubst %.c,%,$(SRCS))
 all: $(PROGS)
 
 %: %.c
-		$(CC) -g -o $@ $<
+		$(CC) -g -o $@ $< -lm
